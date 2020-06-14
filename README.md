@@ -1,6 +1,4 @@
 # Image-Steganography-WebApp
-
-# Stegograph
 # Steps to Run this Project:
 
 1.Create an environment
