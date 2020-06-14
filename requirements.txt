@@ -6,7 +6,7 @@ colorama==0.3.9
 cycler==0.10.0
 decorator==4.3.0
 distlib==0.3.0
-Django==1.8.13
+Django==1.11.29
 entrypoints==0.2.3
 filelock==3.0.12
 Flask==1.1.2
