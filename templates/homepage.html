@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+			.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+			.fa-anchor,.fa-coffee {font-size:200px}
+			body{
+				width:100%;
+				height:100vh;
+				background-image:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1569615313731-7407da4f4594?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9');
+				background-repeat:none;
+				background-size: 100% 100%;
+				position:relative;
+			}
+			html{
+				scroll-behavior:smooth;
+				font-family: "Lucida Sans", sans-serif;
+			}
+			*{
+				margin:auto;
+				padding:auto;
+				box-sizing:border-box;
+				font-family: 'Tenali Ramakrishna', sans-serif;
+			}
+			p{
+				text-align:justify;
+				font-size:1.3rem;
+				line-height:1.4rem;
+			}
+			h1{
+				text-align:center;
+				font-size:3.5rem;
+			}
+			h3{
+				color: black;
+				font-size:1.7rem;
+			}
+			.headings{
+				margin-bottom:10px;
+			}
+			.stego{
+				width:100%;
+				height:100vh;
+				padding-bottom:10px;
+				position:relative;
+			}
+			.form-group{
+				padding-top:2px;
+				border:1px solid black;
+				border-radius:10px;
+				background-color:#f1f1f1!important;
+			}
+			.buttons > button{
+				border:1px solid black;
+				margin-bottom:5px;
+				padding:5px 10px;
+				outline:none;
+				color:#001;
+				font-size:1rem;
+				line-height:1.4rem;
+				text-align:center;
+			}
+			.buttons > button:hover{
+				background-color:#7da3c7!important;
+				color:#000;
+				box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+			}
+		</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="/about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+    <a href="/team" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Team</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/about" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="/team" class="w3-bar-item w3-button w3-padding-large">Team</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">CSE FINAL YEAR PROJECT ON IMAGE STEGANOGRAPHY</h1>
+</header>
+					
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+		<h4 style="font-size:1.5rem; text-align:center"><b>Merge your Secret Image inside the cover image</b></h4>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 m-auto">
+						<div class="row">
+							<form method="POST" action="/merge" enctype="multipart/form-data">
+								<div class="col-md-4 m-auto">
+									<h4>Step 1:</h4>
+									<div class="form-group text-left">
+										<label for="img" style="font-size:1.3rem; margin:5px">Upload Cover Image :</label><br>
+										<input type="file" name="img1">
+									</div>
+								</div>
+								<br/>
+								<div class="col-md-4 m-auto">
+									<h4>Step 2:</h4>
+									<div class="form-group text-left">
+										<label for="img" style="font-size:1.3rem; margin:5px">Upload Secret Image :</label><br>
+										<input type="file" name="img2">
+									</div>
+								</div>
+								<h4 style="text-align:center">Step 3:</h4>
+								<p style="font-size:1.3rem; text-align:center"><b>After succesfully uploading your pics, Click on Merge button to see your image</b></p>
+								<div class="d-flex justify-content-center buttons"> 
+									<input type="submit" name="sbt" value="Merge">
+								</div>
+								<div class="clearfix"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+		<div class="w3-twothird">
+			<div class="col-md-6">
+				<form method="POST" action="/unmerge" enctype="multipart/form-data">
+				<h4 style="font-size:1.5rem; text-align:center"><b>Unmerge your Steganographic Image</b></h4>
+				<div class="form-group text-center">
+					<label for="img" style="font-size:1.3rem">Upload Stego Image :</label><br>
+					<input type="file" name="img">
+				</div>
+				</br>
+				<div class="d-flex justify-content-center buttons">
+				    <input type="submit" name="sbt" value="Unmerge">
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <p>Made by NSEC STUDENTS</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
